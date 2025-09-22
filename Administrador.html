@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Administrador de tareas - Rendimiento Simulado</title>
+  <link rel="stylesheet" href="Administrador.css" />
+  <script defer src="Administrador.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Barra de iconos -->
+    <nav class="icon-sidebar" aria-label="Iconos de categorías">
+      <ul>
+        <li class="icon-item menu-toggle" title="Menú">☰</li>
+        <li class="icon-item active" data-section="cpu" title="CPU">💻</li>
+        <li class="icon-item" data-section="memoria" title="Memoria">🧮</li>
+        <li class="icon-item" data-section="discoC" title="Disco C">🗄️</li>
+        <li class="icon-item" data-section="discoD" title="Disco D">📀</li>
+        <li class="icon-item" data-section="ethernet1" title="Ethernet 1">🌐</li>
+        <li class="icon-item" data-section="ethernet2" title="Ethernet 2">🔌</li>
+        <li class="icon-item" data-section="wifi" title="Wi-Fi">📶</li>
+        <li class="icon-item" data-section="gpu" title="GPU 0">🎮</li>
+      </ul>
+    </nav>
+
+    <!-- Barra de categoría -->
+
+    <nav class="label-sidebar" aria-label="Nombres de categorías">
+      <ul>
+        <li class="label-item active" data-section="cpu">CPU</li>
+        <li class="label-item" data-section="memoria">Memoria</li>
+        <li class="label-item" data-section="discoC">Disco 0 (C:)</li>
+        <li class="label-item" data-section="discoD">Disco 1 (D:)</li>
+        <li class="label-item" data-section="ethernet1">Ethernet</li>
+        <li class="label-item" data-section="ethernet2">Ethernet</li>
+        <li class="label-item" data-section="wifi">Wi-Fi</li>
+        <li class="label-item" data-section="gpu">GPU 0</li>
+      </ul>
+    </nav>
+
+    <!-- Área principal -->
+
+    <main class="metrics-area" role="main">
+      <div class="header">
+        <h1>
+          Rendimiento
+          <span id="info-cpu" class="header-info oculto">
+           12th Gen Intel(R) Core(TM) i7-12700T
+          </span>
+          <span id="info-memoria" class="header-info oculto">
+           32.0 GB
+          </span>
+          <span id="info-disco" class="header-info oculto">
+           KINGSTON SNV251000G
+          </span>
+          <span id="info-ethernet" class="header-info oculto">
+           Hyper-V Virtual Ethernet Adapter #2
+          </span>
+        </h1>
+        <button id="tema-btn" aria-label="Cambiar tema">Cambiar Tema</button>
+      </div>
+      <div class="metrics-content">
+        <section id="contenedor-metricas" tabindex="0">
+        </section>
+        <aside id="datos-adicionales" aria-label="Datos adicionales"></aside>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
