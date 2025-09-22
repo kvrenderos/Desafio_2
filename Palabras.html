@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Búsqueda de Palabras</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <title>Lista de Palabras</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/palabras.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/palabras.css">
+
 </head>
 <body>
-  <div class="jumbotron jumbotron-fluid bg-success text-white p-4">
+    <div class="jumbotron jumbotron-fluid p-4">
         <div class="container">
-            <h1 class="display-5">Lista de palabras</h1>
-            <p class="lead">Busca una palabra a través de espreciones regulares</p>
+            <h1><i class="fas fa-book-reader"></i> Lista de Palabras</h1>
+            <p class="lead">Busca una palabra y descubre su significado con ejemplos</p>
         </div>
     </div>
 
@@ -19,29 +21,33 @@
             <fieldset id="box-form">
                 <div class="form-group mb-3">
                     <label for="txtword">Ingresa una palabra:</label>
-                    <input class="form-control" type="text" id="txtword" name="busca" size="24">
+                    <input class="form-control" type="text" id="txtword" name="busca" size="24" placeholder="Escribe aquí...">
                 </div>
 
-        <div class="row">
-    <!-- Columna izquierda: lista de palabras -->
-    <div class="col-md-6">
-        <div class="form-group mb-3">
-            <label for="lstwords">Listado de Palabras:</label>
-            <select class="form-control" name="lstwords" id="lstwords" size="15"></select>
-        </div>
-    </div>
+                <div class="row">
+                    <!-- Lista -->
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="lstwords">Listado de Palabras:</label>
+                            <select class="form-control" name="lstwords" id="lstwords" size="15"></select>
+                        </div>
+                    </div>
 
-    <!-- Columna derecha: botón y significado -->
-    <div class="col-md-6">
-        <div class="form-group mb-3">
-            <button type="button" class="btn btn-success mb-3" id="btnSignificado">Mostrar Significado</button>
-            <textarea class="form-control" id="txtmeaning" rows="10" readonly></textarea>
-        </div>
-    </div>
-</div>
-
+                    <!-- Significado -->
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <button type="button" class="btn btn-primary mb-3" id="btnSignificado">
+                                <i class="fas fa-info-circle"></i> Mostrar Significado
+                            </button>
+                            <textarea class="form-control" id="txtmeaning" rows="6" readonly placeholder="Aquí se mostrará el significado..."></textarea>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
         </form>
     </div>
+
+    <!-- Conectar JS -->
+    <script src="js/palabras.js"></script>
 </body>
 </html>

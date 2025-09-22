@@ -1,0 +1,25 @@
+       /* Jumbotron con degradado y título centrado */
+        .jumbotron {
+            background: linear-gradient(90deg, #6a11cb, #2575fc); /* morado-azul */
+            color: white;
+            text-align: center;
+        }
+
+        /* Hover en lista de palabras */
+        #lstwords option:hover {
+            background-color: #cce5ff;
+            cursor: pointer;
+        }
+
+        /* Transición textarea */
+        #txtmeaning {
+            transition: background-color 0.3s ease, color 0.3s ease;
+            min-height: 100px;   /* más pequeño al inicio */
+            resize: vertical;    /* usuario puede agrandar */
+        }
+
+        @media (max-width: 768px) {
+            #lstwords {
+                height: 200px;
+            }
+        }
