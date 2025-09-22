@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Musical de JavaScript</title>
+    <link rel="stylesheet" href="cancion.css">
+</head>
+<body>
+
+    <h2> Lista Musical </h2>
+
+    <!-- Formulario -->
+    <div class="formulario">
+        <input type="text" id="cancion" placeholder="Ingrese el nombre de la Canción">
+        <input type="text" id="cantante" placeholder="Ingrese el nombre del Cantante">
+        <input type="text" id="discografica" placeholder="Ingrese la Discográfica">
+        <input type="text" id="duracion" placeholder="Ingrese la Duración">
+        <input type="text" id="nacionalidad" placeholder="Ingrese la Nacionalidad">
+        <button class="btn-guardar" onclick="guardarCancion()">Guardar</button>
+    </div>
+
+    <!-- Tabla de canciones -->
+    <table id="tablaCanciones">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Canción</th>
+                <th>Cantante</th>
+                <th>Discográfica</th>
+                <th>Duración</th>
+                <th>Nacionalidad</th>
+                <th>Operaciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Panel de reproducción -->
+    <div class="panel" id="panelReproduccion">
+        <h3>Ahora suena...</h3>
+        <p id="infoCancion">Seleccione una canción con ¡Dale Play!</p>
+    </div>
+
+    <script src="cancion.js"></script>
+</body>
+</html>

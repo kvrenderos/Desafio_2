@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Enviar Correo</title>
+  <link rel="stylesheet" href="correo.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Enviar Correo</h2>
+    <form id="formCorreo" enctype="multipart/form-data">
+      <label>De:</label>
+      <input type="text" id="de" placeholder="Nombre <correo@dominio.com>">
+      <span class="error" id="errorDe">Ingrese remitente válido</span>
+
+      <label>Para:</label>
+      <input type="text" id="para" placeholder="Nombre <correo@dominio.com>">
+      <span class="error" id="errorPara">Ingrese destinatario válido</span>
+
+      <label>CC:</label>
+      <input type="text" id="cc" placeholder="Nombre <correo@dominio.com>">
+      <span class="error" id="errorCc">Ingrese copia válida</span>
+
+      <label>CCO:</label>
+      <input type="text" id="cco" placeholder="Nombre <correo@dominio.com>">
+      <span class="error" id="errorCco">Ingrese copia oculta válida</span>
+
+      <label>Asunto:</label>
+      <input type="text" id="asunto">
+      <span class="error" id="errorAsunto">El asunto es obligatorio</span>
+
+      <label>Mensaje:</label>
+      <textarea id="mensaje" rows="5"></textarea>
+      <span class="error" id="errorMensaje">El mensaje es obligatorio</span>
+
+      <label>Adjuntar archivo:</label>
+      <input type="file" id="archivo">
+      <span class="error" id="errorArchivo">Solo se permiten .jpg, .png, .docx, .pdf</span>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado" class="resultado" style="display:none;"></div>
+  </div>
+
+  <script src="correo.js"></script>
+</body>
+</html>
