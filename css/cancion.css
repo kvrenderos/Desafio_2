@@ -1,0 +1,134 @@
+/* Fondo general  */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #121212;
+    color: #fff;
+}
+
+/* Título */
+h2 {
+    color: #1DB954; /* Verde característico de Spotify */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}
+
+/* Formulario */
+.formulario {
+    margin: 30px auto;
+    width: 400px;
+    text-align: left;
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+}
+
+/* Campos del formulario */
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background: #282828;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.formulario input::placeholder {
+    color: #bbb;
+}
+
+.formulario input:focus {
+    border: 1px solid #1DB954;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(29,185,84,0.7);
+}
+
+/* Botón Guardar */
+.btn-guardar {
+    background: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-guardar:hover {
+    background: #1ed760;
+    transform: scale(1.05);
+}
+
+/* Tabla estilo oscuro */
+table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.6);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #282828;
+    color: #1DB954;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+td {
+    border-top: 1px solid #333;
+    color: #ddd;
+}
+
+/* Botón ¡Dale Play! */
+.btn-play {
+    background: #1DB954;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-play:hover {
+    background: #1ed760;
+    transform: scale(1.1);
+}
+
+/* Panel de reproducción */
+.panel {
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #1DB954, #0d4d27);
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 0px 20px rgba(29,185,84,0.7);
+    color: #fff;
+    font-size: 16px;
+}
+
+.panel h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
